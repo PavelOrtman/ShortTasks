@@ -38,9 +38,7 @@ int main(int argc, char *argv[])
     t = 1;
     n = t << n;
     t = 1;
-    m = t << m;
-    /*qDebug() << QString::number(n, 2) << n;
-    qDebug() << QString::number(m, 2) << m;*/
+    m = t << m;    
     if(n == m) m = m << 1;
     else{
         m = m ^ n;
@@ -59,6 +57,7 @@ int main(int argc, char *argv[])
     qDebug() << "------------";
 
     // (D) Дано целое число A и натуральное число i. Выведите число, которое получается из числа A установкой значения i-го бита равному 1.
+    qDebug() << "-- task D --";
     m = 442;    // A
     n = 3;      // i
     qDebug() << "Input m: " << getBinaryString(QString::number(m, 2)) << "Dec:" << m;
